@@ -193,8 +193,10 @@ fadeIn {
 fadeOut {
     from {
         opacity: 1;
+        z-index: 1;
     } to {
         opacity: 0;
+        z-index: -1;
     }
 }
 
@@ -223,6 +225,7 @@ div.welcome {
     height: 100%;
     float: center;
     align-self: center;
+    z-index: -1;
 }
 
 p.welcome {
