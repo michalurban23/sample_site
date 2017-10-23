@@ -1,0 +1,232 @@
+body {
+    background-image: url("../assets/texture-1444067_1920.jpg");
+    background-attachment: fixed;
+    background-size: cover
+}
+
+header {
+    border-radius: 20px;
+}
+
+header > ol {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    font-size: 18px;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(#b3ecff, white, #b3ecff);
+    border-radius: inherit;
+}
+
+header > ol > li {
+    float: left;
+    background: linear-gradient(#b3ecff, white, #b3ecff);
+    width: 20%;
+    margin: auto;
+    height: 2em;
+    border-radius: inherit;
+}
+
+header > ol a {
+    display: block;
+    border-radius: inherit;
+    color: purple;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+header > ol > li > a:hover {
+    color: silver;
+}
+
+header > ol > li > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border-radius: inherit;
+}
+
+header > ol > li:hover > ul {
+    display: block;
+}
+
+header > ol > li:hover > a {
+    background-color: purple;
+}
+
+header > ol > li:first-child {
+    margin-left: 0;
+}
+
+header > ol > li > ul > li > a {
+    border-top: 1px solid lightblue;
+    border-radius: inherit;
+}
+
+header > ol > li > ul > li {
+    background: linear-gradient(#b3ecff, white, #b3ecff);
+    border-radius: inherit;
+}
+
+header > ol > li > ul > li:hover > a {
+    background-color: purple;
+}
+
+header > ol > li > ul > li:hover a {
+    color:silver;
+}
+
+div.outer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 0 0 50px 25px #b3ecff inset;
+    border-radius: 20px;
+    color: purple;
+    background: linear-gradient(#b3ecff, white, #b3ecff);
+}
+
+div.inner {
+    width: 40%;
+    margin: auto;
+    box-shadow: 0 0 10px 5px #b3ecff inset;
+    border-radius: 20px;
+    color: purple;
+    background: linear-gradient(#b3ecff, white, #b3ecff);
+}
+
+div.footer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 10px #b3ecff inset;
+    border-radius: 20px;
+    color: purple;
+    background: linear-gradient(#b3ecff, white, #b3ecff);
+}
+
+p {
+    font: 14pt/21pt Consolas, serif;
+    padding: 10px 50px;
+    text-indent: 75px;
+    text-align: justify;
+}
+
+p.highlight {
+    font: italic bold 14pt Georgia, serif;
+}
+
+p.title {
+    font: bold 21pt Cambria, serif;
+    padding: inherit;
+    text-align: center;
+    text-indent: inherit;
+}
+
+p.small {
+    font: 10pt Tahoma, serif;
+    padding: 0 0;
+    text-indent: 0;
+    text-align: center;
+}
+
+img.small {
+    padding: 0 5px 0 20px;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+img.profile {
+    padding: 25px 25px;
+    margin: auto;
+    border-radius: 220px;
+}
+    /*.imgcenter {display: block; margin: auto; width: 60%; padding: 10px;}
+          .menu5 {list-style-type:none; margin-left: auto; margin-right: auto; padding:0; width:300px;}
+          .menu5 li a {text-decoration:none; display:block; padding:10px 5px; color:#EFE9AB; font:20px Consolas, serif; text-align:center;}
+          .menu5 li a:hover {color:brown; box-shadow:0 0 8px 1px #CCC inset; border-radius:20px;}*/
+
+a.feet:link, a.feet:visited {
+    background-color: transparent;
+    color: purple;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.feet:hover, a.feet:active {
+    color: silver;
+}
+
+
+/* Starting animation */
+
+@keyframes
+fadeIn {
+    0% {
+        opacity: 0.2;
+        color: purple;
+        font-size: 20pt;
+    } 50% {
+        opacity: 0.6;
+        color: gold;
+        font-size: 90pt;
+    } 80% {
+        opacity: 1;
+        color: purple;
+        font-size: 160pt;
+    } 100% {
+        opacity: 1;
+        color: purple;
+        font-size: 160pt;
+    }
+}
+
+@keyframes
+fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: backwards;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut ease-in 1;
+    animation-fill-mode: backwards;
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+
+div.welcome {
+    opacity: 0;
+    position: fixed;
+    margin: auto;
+    background-image: url("../assets/texture-1444067_1920.jpg");
+    width: 100%;
+    height: 100%;
+    float: center;
+    align-self: center;
+}
+
+p.welcome {
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: 10;
+}
