@@ -37,6 +37,8 @@ header > ol a {
     color: purple;
     text-decoration: none;
     padding: 0 5px;
+    font-weight: bold;
+    font-style: oblique;
 }
 
 header > ol > li > a:hover {
@@ -91,13 +93,17 @@ div.content {
     background: linear-gradient(#b3ecff, white, #b3ecff);
 }
 
+div.container {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div.inner {
-    width: 40%;
-    margin: auto;
-    box-shadow: 0 0 10px 5px #b3ecff inset;
-    border-radius: 20px;
-    color: purple;
-    background: linear-gradient(#b3ecff, white, #b3ecff);
+    display: grid;
+    width: 50%;
 }
 
 div.footer {
@@ -112,13 +118,19 @@ div.footer {
 
 p {
     font: 14pt/21pt Consolas, serif;
-    padding: 10px 50px;
-    text-indent: 75px;
+    padding: 5px 50px;
+    text-indent: 50px;
     text-align: justify;
 }
 
 p.highlight {
-    font: italic bold 14pt Georgia, serif;
+    width: 80%;
+    margin: auto;
+    font: 14pt/21pt Consolas, serif;
+    padding: 5px 50px 50px;
+    text-indent: 50px;
+    text-align: justify;
+    /*position: sticky;*/
 }
 
 p.title {
@@ -143,14 +155,35 @@ img.small {
 }
 
 img.profile {
-    padding: 25px 25px;
+    padding: 50px 50px;
     margin: auto;
     border-radius: 220px;
+    height: 500px;
 }
-    /*.imgcenter {display: block; margin: auto; width: 60%; padding: 10px;}
-          .menu5 {list-style-type:none; margin-left: auto; margin-right: auto; padding:0; width:300px;}
+
+img.imgcenter {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+          /*.menu5 {list-style-type:none; margin-left: auto; margin-right: auto; padding:0; width:300px;}
           .menu5 li a {text-decoration:none; display:block; padding:10px 5px; color:#EFE9AB; font:20px Consolas, serif; text-align:center;}
-          .menu5 li a:hover {color:brown; box-shadow:0 0 8px 1px #CCC inset; border-radius:20px;}*/
+          .menu5 li a:hover {color:brown; box-shadow:0 0 8px 1px #CCC inset; border-radius:20px;}*/*/
+
+a {
+    color: green;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+a:hover {
+    color: silver;
+    font-size: 14pt;
+    font-weight: bolder;
+    font-style: italic;
+}
 
 a.feet:link, a.feet:visited {
     background-color: transparent;
@@ -162,5 +195,5 @@ a.feet:link, a.feet:visited {
 }
 
 a.feet:hover, a.feet:active {
-    color: silver;
+    color: #0011AA;
 }
