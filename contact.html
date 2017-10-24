@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xml:lang="pl" lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content="Sample Site for CodeCool assignement">
+    <meta name="Keywords" content="sample", "Urban", "CodeCool">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <Title>Contact</Title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+
+    <div w3-include-html="header.html"></div>
+
+    <div class="content">
+        <form>
+            <fieldset>
+                <legend>
+                    Contact me by email
+                </legend>
+
+                <label for="name">Your name: </label>
+                <input name="name" class="field" type="text" required /><br />
+
+                <label for="email">Your email: </label>
+                <input name="email" class="field" type="email" required /><br />
+
+                <label for="message">Your message: </label>
+                <textarea name="message" rows="5" /></textarea><br />
+
+                <input type="submit" value="SEND" class="button" disabled />
+            </fieldset>
+        </form>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+
+</html>

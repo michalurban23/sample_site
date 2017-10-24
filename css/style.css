@@ -197,3 +197,39 @@ a.feet:link, a.feet:visited {
 a.feet:hover, a.feet:active {
     color: #0011AA;
 }
+
+fieldset {
+    background: skyblue;
+    border: 15px solid lightblue;
+    border-radius: 20px;
+    margin: 5% auto;
+    padding: 2%;
+    width: 60%;
+}
+
+label {
+    width: 40%;
+    vertical-align: top;
+    text-align: right;
+    display: inline-block;
+    padding: 1% 0;
+}
+
+input.field {
+    width: 25%;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 25%;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+input.button {
+    width: 20%;
+    height: 10%;
+    margin: auto 45%;
+    text-align: center;
+}
