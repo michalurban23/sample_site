@@ -81,6 +81,8 @@ header > ol > li > ul > li:hover > a {
 
 header > ol > li > ul > li:hover a {
     color:silver;
+    position: relative;
+    z-index: 10;
 }
 
 div.content {
@@ -130,7 +132,6 @@ p.highlight {
     padding: 5px 50px 50px;
     text-indent: 50px;
     text-align: justify;
-    /*position: sticky;*/
 }
 
 p.title {
@@ -167,9 +168,29 @@ img.center {
     width: 60%;
     padding: 10px;
 }
-          /*.menu5 {list-style-type:none; margin-left: auto; margin-right: auto; padding:0; width:300px;}
-          .menu5 li a {text-decoration:none; display:block; padding:10px 5px; color:#EFE9AB; font:20px Consolas, serif; text-align:center;}
-          .menu5 li a:hover {color:brown; box-shadow:0 0 8px 1px #CCC inset; border-radius:20px;}*/*/
+
+ul.inner {
+    list-style-type: none;
+    margin: auto;
+    padding: 2%;
+    width: 50%;
+}
+
+ul.inner li a {
+    text-decoration: none;
+    display: block;
+    padding: 4% 2%;
+    color: purple;
+    font: 20px Consolas, serif;
+    text-align: center;
+}
+
+ul.inner li a:hover {
+    color:silver;
+    background-color: purple;
+    box-shadow: 0 0 15px 7px #CCC inset;
+    border-radius:20px;
+}
 
 a {
     color: green;
